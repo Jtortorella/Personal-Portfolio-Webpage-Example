@@ -1,0 +1,126 @@
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #DFF7EF;
+    font-family: 'Roboto Mono', monospace;
+    letter-spacing: .2rem;
+    text-align: center;
+}
+
+main {
+  width: 97%;
+  margin: 0 auto;
+  background-color: white;
+  border-bottom: 2px dotted #F7C5BA;
+}
+#navbar {
+    border-bottom: 2px dotted #F7C5BA;
+    width: 100%;
+    margin: 0 auto;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #ADC1F7;
+    height: 6vh;
+    z-index: 3;
+}
+#navlink {
+  padding: 1% 2% 1% 2%;
+  border: 2px solid black;
+  border-radius: 5px;
+  text-decoration: none;
+}
+#welcome-section {
+    border-bottom: 2px dotted #F7C5BA;
+    height: 100vh;
+    padding-top: 8vh;
+    margin: 10%;
+}
+#projects {
+  background-color: #89C4B0;
+  border-radius: 5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100%;
+  padding-top: 8vh;
+  text-align: center;
+  overflow: hidden;
+  border-bottom: 2px dotted #F7C5BA;
+
+}
+#projectExample {
+  justify-self: center;
+  display: flex;
+  flex-direction: column;
+}
+#projectDisplay {
+  width: 90%;
+  border: 3px dotted #ADC1F7;
+  height: 100%;
+  z-index: 1;
+}
+#projects a {
+  position: absolute;
+  z-index: 2;
+  width: 30%;
+  height: 49%;
+}
+.project-tile {
+  background-color: #F7C5BA;
+  border: 3px dotted black;
+  width: 90%;
+}
+#profile-section {
+  padding-top: 6vh;
+  height: 20vh;
+  align-items: center;
+  text-align: center;
+  margin: 10%;
+    border-bottom: 2px dotted #F7C5BA;
+}
+
+#profile-section a:first-child {
+  display: block;
+}
+
+.fa {
+  position: relative;
+  z-index: 3;
+  font-size: 2.5rem;
+  margin: 2%;
+  
+}
+#navlink:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+}
+#profile-link a {
+ z-index: 9999;
+}
+@media only screen and (max-width: 800px) {
+  #projects {
+    grid-template-columns: 1fr;
+  }
+  #projectExample {
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+}
+@media only screen and (max-width: 300px) {
+  
+  #navbar {
+  flex-wrap: wrap;
+  height: auto;
+}
+}
+@media only screen and (min-width: 1600px) {
+  
+  #projects {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
